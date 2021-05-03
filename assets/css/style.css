@@ -52,7 +52,38 @@ h1{
     color:rgb(176, 14, 14);
 }
 
-.buttons button:active, .buttons button:hover{
+.buttons button:hover{
     border: 2px solid rgb(176, 14, 14);
 }
 
+.ticket {
+    width: 80%;
+    margin: 30px auto;
+    background-color: white;
+    color: black;
+    padding: 20px 10px 10px 10px;
+}
+
+.passenger_name{
+    background-color: gray;
+    height: 200px;
+    padding:20px;
+    font-size:1.2rem;
+    width:30%;
+}
+
+.passenger_name p{
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.ticket .row{
+    justify-content:space-between;
+    border-top: 1px solid gray;
+}
+
+.ticket_infos{
+    padding: 10px 120px 0 10px;
+    font-size: 1.2rem;
+
+}

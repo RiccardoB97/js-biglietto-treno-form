@@ -15,7 +15,7 @@
             <div class="row">
                 <div class="data">
                     <h3>Nome e Cognome</h3>
-                    <input type="text" name="name" id="name">
+                    <input type="text" name="user_name" id="user_name">
                 </div>
                 <div class="data">
                     <h3>Km da percorrere</h3>
@@ -31,9 +31,32 @@
                 </div>
             </div>
             <div class="buttons">
-                <button type="submit">Genera</button>
-                <button type="reset">Annulla</button>
+                <button type="submit" id="submit">Genera</button>
+                <button type="reset" id='reset'>Annulla</button>
             </div>
+        </div>
+        <div class="ticket">
+            <h3>DETTAGLIO PASSEGGERI</h3>
+            <div class="row">
+                <div class="passenger_name">
+                    <h4>NOME PASSEGGERO</h4>
+                    <p id="passenger"></p>
+                </div>
+                <div class="ticket_infos">
+                    <h4>Offerta</h4>
+                </div>
+                <div class="ticket_infos">
+                    <h4>Carrozza</h4>
+                </div>
+                <div class="ticket_infos">
+                    <h4>Codice CP</h4>
+                </div>
+                <div class="ticket_infos">
+                    <h4>Costo biglietto</h4>
+                    <p id="ticket_price"></p>
+                </div>
+            </div>
+
 
         </div>
     </main>
