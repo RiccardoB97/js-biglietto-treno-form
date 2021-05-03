@@ -57,3 +57,8 @@ function randomNumber(min, max) {
 // Actives the function when  submit is clicked
 document.getElementById('submit').addEventListener("click", calcPrice)
 
+// Resets the inputs when clicked
+function resetForm() {
+    document.getElementById('data_form').reset()
+}
+document.getElementById('reset_form').addEventListener('click', resetForm)

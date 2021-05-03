@@ -12,16 +12,16 @@
     <main id="site_main">
         <h1>calcola il prezzo del tuo biglietto</h1>
         <div class="card">
-            <div class="row">
-                <div class="data">
+            <form action="" id="data_form">
+                <div>
                     <h3>Nome e Cognome</h3>
                     <input type="text" name="user_name" id="user_name">
                 </div>
-                <div class="data">
+                <div>
                     <h3>Km da percorrere</h3>
                     <input type="text" name="distance" id="distance">
                 </div>
-                <div class="data">
+                <div>
                     <h3>Fascia d'età</h3>
                     <select name="age" id="age">
                         <option value="minorenne">Minorenne</option>
@@ -29,11 +29,9 @@
                         <option value="senior">Over 65</option>
                     </select>
                 </div>
-            </div>
-            <div class="buttons">
-                <button type="submit" id="submit">Genera</button>
-                <button type="reset" id='reset'>Annulla</button>
-            </div>
+            </form>
+            <button type="submit" id="submit">Genera</button>
+            <button type="reset" id='reset_form'>Annulla</button>
         </div>
         <h1>Il tuo biglietto</h1>
         <div class="ticket">
