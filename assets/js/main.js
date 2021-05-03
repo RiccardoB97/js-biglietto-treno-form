@@ -1,4 +1,3 @@
-
 function calcPrice() {
     // Get user distance
     var distance = document.getElementById('distance').value;
@@ -14,24 +13,22 @@ function calcPrice() {
     var discountUnderAge = (ticketPrice / 100) * 20;
     // Creates a discount for seniors
     var discountSenior = (ticketPrice / 100) * 40;
-
+    // Ask user name
+    var userName = document.getElementById('user_name').value;
+    document.getElementById('passenger').innerHTML = userName;
     if (age === "minorenne") {
         finalPrice = ticketPrice - discountUnderAge
-        return finalPrice
+        return document.getElementById('ticket_price').innerHTML = finalPrice.toFixed(2);
     } else if (age === "adulto") {
         finalPrice = ticketPrice
-        return finalPrice
+        return document.getElementById('ticket_price').innerHTML = finalPrice.toFixed(2);
     } else if (age === "senior") {
         finalPrice = ticketPrice - discountSenior
-        return finalPrice
+        return document.getElementById('ticket_price').innerHTML = finalPrice.toFixed(2);
     }
-    document.getElementById('ticket_price').innerHTML = finalPrice;
 
 
 }
 
 document.getElementById('submit').addEventListener("click", calcPrice)
 
-// Ask user name
-var userName = document.getElementById('user_name').value;
-document.getElementById('passenger').innerHTML = userName;

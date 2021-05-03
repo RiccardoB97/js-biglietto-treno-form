@@ -13,7 +13,7 @@ h1{
     color: white;
     text-transform: uppercase;
     text-align: center;
-    padding-top: 2rem;
+    padding-top: 1rem;
 }
 
 .card {
@@ -58,7 +58,7 @@ h1{
 
 .ticket {
     width: 80%;
-    margin: 30px auto;
+    margin: 20px auto;
     background-color: white;
     color: black;
     padding: 20px 10px 10px 10px;
