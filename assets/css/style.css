@@ -85,9 +85,10 @@ h1{
 .ticket_infos{
     padding: 20px 120px 20px 10px;
     font-size: 1.2rem;
-
+    position: relative;
 }
 
 .ticket_infos p{
-    margin-top: 80px;
+    position: absolute;
+    bottom:30px;
 }

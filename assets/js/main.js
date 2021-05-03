@@ -21,28 +21,36 @@ function calcPrice() {
     // Creates a discount for seniors
     var discountSenior = (ticketPrice / 100) * 40;
 
-    // Prints the random number generated
-    document.getElementById('cp_code').innerHTML = cpCode(2000, 9000)
+    // Prints the random cpcode generated
+    document.getElementById('cp_code').innerHTML = randomNumber(2000, 9000)
+
+    // Prints the random seat number generated
+    document.getElementById('seat').innerHTML = randomNumber(1, 20)
 
     // Ask user name
     var userName = document.getElementById('user_name').value;
     // Prints the user name 
     document.getElementById('passenger').innerHTML = userName;
 
+
     if (age === "minorenne") {
         finalPrice = ticketPrice - discountUnderAge
-        return document.getElementById('ticket_price').innerHTML = finalPrice.toFixed(2) + '£';
+        return document.getElementById('ticket_price').innerHTML = finalPrice.toFixed(2) + '£',
+            document.getElementById('discount').innerHTML = "Sconto minorenne ";
+
     } else if (age === "adulto") {
         finalPrice = ticketPrice
-        return document.getElementById('ticket_price').innerHTML = finalPrice.toFixed(2) + '£';
+        return document.getElementById('ticket_price').innerHTML = finalPrice.toFixed(2) + '£',
+            document.getElementById('discount').innerHTML = "Nessuno sconto applicato ";
     } else if (age === "senior") {
         finalPrice = ticketPrice - discountSenior
-        return document.getElementById('ticket_price').innerHTML = finalPrice.toFixed(2) + '£';
+        return document.getElementById('ticket_price').innerHTML = finalPrice.toFixed(2) + '£',
+            document.getElementById('discount').innerHTML = "Sconto senior "
     }
 }
 
-// Generates a random number for the CP Code
-function cpCode(min, max) {
+// Generates a random number for the CP Code and the seat number
+function randomNumber(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
